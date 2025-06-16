@@ -1,0 +1,149 @@
+.headerOverlay {
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(32px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.navList {
+    display: none;
+}
+
+.logo {
+    width: 63px;
+    height: 28px;
+    fill: #ffffff;
+    flex-shrink: 0;
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.btnText {
+    display: none;
+}
+
+.btnPen {
+    background-color: #ffffff;
+
+    .btnIconPen {
+        fill: #000000;
+    }
+}
+
+.btnMenu {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .btnIconMenu {
+        fill: #ffffff;
+    }
+}
+
+.btnIcon {
+    width: 22px;
+    height: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+    .headerOverlay {
+        padding: 21px 50px;
+    }
+
+    .headerScrolled {
+        background-color: transparent;
+        backdrop-filter: none;
+
+        .header {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 16px;
+            border-radius: 166px;
+            backdrop-filter: blur(32px);
+            background: rgba(22, 24, 26, 0.7);
+        }
+    }
+
+    .logoWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 73px;
+        height: 32px;
+    }
+
+    .navList {
+        display: flex;
+        gap: 46px;
+        margin-left: 119px;
+    }
+
+    .navLink {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .btnMenu {
+        display: none;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+
+    .btnIcon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .btnPenWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 166px;
+        padding: 12px;
+        cursor: pointer;
+
+        .btnText {
+            display: block;
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #ffffff;
+            padding: 0 25px;
+        }
+    }
+}
