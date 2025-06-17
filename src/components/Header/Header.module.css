@@ -31,7 +31,7 @@
 
 .btn {
     display: flex;
-    padding: clamp(8px, 0.77vw + 4px, 12px);
+    padding: clamp(8px, 17px - 0.5vw, 12px);
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -61,8 +61,8 @@
 }
 
 .btnIcon {
-    width: clamp(16px, 0.924vw, 22px);
-    height: clamp(16px, 0.924vw, 22px);
+    width: clamp(16px, 25px - 0.8vw, 22px);
+    height: clamp(16px, 25px - 0.8vw, 22px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -103,10 +103,6 @@
 
     .btnMenu {
         display: none;
-    }
-
-    .btn {
-        padding: clamp(8px, 0.77vw + 4px, 12px);
     }
 
     .btnPenWrapper {
