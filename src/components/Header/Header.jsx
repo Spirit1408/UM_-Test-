@@ -24,7 +24,8 @@ export const Header = () => {
     }, []);
 
     return (
-        <header className={clsx(css.headerOverlay, scrolled && css.headerScrolled)}>
+        <header
+            className={clsx(css.headerOverlay, scrolled && css.headerScrolled)}>
             <div className={css.header}>
                 <div className={css.logoWrapper}>
                     <svg className={css.logo}>
@@ -32,11 +33,41 @@ export const Header = () => {
                     </svg>
 
                     <ul className={css.navList}>
-                        <li><a className={css.navLink} href="#">services</a></li>
-                        <li><a className={css.navLink} href="#">our approach</a></li>
-                        <li><a className={css.navLink} href="#">projects</a></li>
-                        <li><a className={css.navLink} href="#">about us</a></li>
-                        <li><a className={css.navLink} href="#">blog</a></li>
+                        <li>
+                            <a
+                                className={css.navLink}
+                                href="#">
+                                services
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={css.navLink}
+                                href="#">
+                                our approach
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={css.navLink}
+                                href="#">
+                                projects
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={css.navLink}
+                                href="#">
+                                about us
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={css.navLink}
+                                href="#">
+                                blog
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -46,25 +77,30 @@ export const Header = () => {
                             className={css.btnPenWrapper}
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
+                            transition={{ duration: 0.3 }}>
                             <AnimatePresence>
                                 {isDesktop && (
                                     <motion.span
                                         key="btnText"
-                                        className={clsx(css.btnText, css.visibleText)}
+                                        className={clsx(
+                                            css.btnText,
+                                            css.visibleText
+                                        )}
                                         initial={{ opacity: 0, x: 10 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         exit={{ opacity: 0, x: 10 }}
-                                        transition={{ duration: 0.3 }}
-                                    >
+                                        transition={{ duration: 0.3 }}>
                                         LET’S TALK
                                     </motion.span>
                                 )}
                             </AnimatePresence>
 
                             <button className={clsx(css.btn, css.btnPen)}>
-                                <svg className={clsx(css.btnIcon, css.btnIconPen)}>
+                                <svg
+                                    className={clsx(
+                                        css.btnIcon,
+                                        css.btnIconPen
+                                    )}>
                                     <use href={`${sprite}#icon-pen`} />
                                 </svg>
                             </button>
@@ -78,10 +114,13 @@ export const Header = () => {
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.95 }}
-                                transition={{ duration: 0.25 }}
-                            >
+                                transition={{ duration: 0.25 }}>
                                 <button className={clsx(css.btn, css.btnMenu)}>
-                                    <svg className={clsx(css.btnIcon, css.btnIconMenu)}>
+                                    <svg
+                                        className={clsx(
+                                            css.btnIcon,
+                                            css.btnIconMenu
+                                        )}>
                                         <use href={`${sprite}#icon-menu`} />
                                     </svg>
                                 </button>

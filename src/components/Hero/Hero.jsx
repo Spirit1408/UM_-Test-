@@ -4,16 +4,17 @@ import sprite from "../../assets/icons/sprite.svg";
 
 export const Hero = () => {
     return (
-        <div className={css.heroOverlay}>
+        <section className={css.heroOverlay}>
             <div className={css.heroHeader}>
                 <div className={css.heroInfo}>
                     <h1 className={css.heroTitle}>
                         building <span>data-driven</span> e-commerce on shopify
                     </h1>
-    
+
                     <div className={css.heroTextWrapper}>
                         <p className={css.heroText}>
-                            We help businesses grow and scale with our expertise in{" "}
+                            We help businesses grow and scale with our expertise
+                            in{" "}
                             <span className={css.heroTextSpan}>
                                 <span className={css.heroTextSpanInner}>
                                     performance
@@ -22,7 +23,9 @@ export const Hero = () => {
                             </span>
                             ,{" "}
                             <span className={css.heroTextSpan}>
-                                <span className={css.heroTextSpanInner}>user</span>{" "}
+                                <span className={css.heroTextSpanInner}>
+                                    user
+                                </span>{" "}
                                 experience
                             </span>{" "}
                             and{" "}
@@ -33,7 +36,7 @@ export const Hero = () => {
                                 strategy
                             </span>
                         </p>
-    
+
                         <div className={css.heroBtnWrapper}>
                             <button className={css.heroBtn}>
                                 <p className={css.heroBtnText}>
@@ -43,7 +46,7 @@ export const Hero = () => {
                                     <use href={`${sprite}#icon-calendar`}></use>
                                 </svg>
                             </button>
-    
+
                             <p className={css.heroTextLast}>
                                 146+ reviews.{" "}
                                 <span>
@@ -53,7 +56,7 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-    
+
                 <div className={css.hero}>
                     <img
                         src={img}
@@ -72,6 +75,6 @@ export const Hero = () => {
                     </svg>
                 </button>
             </div>
-        </div>
+        </section>
     );
 };

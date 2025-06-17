@@ -1,0 +1,231 @@
+.aboutUsOverlay {
+    padding: 48px 20px 97px;
+    color: #ffffff;
+}
+
+.header {
+    margin-bottom: 128px;
+}
+
+.label {
+    border: 1px solid #fff;
+    border-radius: 366px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: fit-content;
+    margin-bottom: 24px;
+}
+
+.labelText {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.description {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+
+    span {
+        color: #1c1c1c;
+    }
+
+    &:last-child {
+        margin-bottom: 64px;
+    }
+}
+
+.photoWrapper {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 24px;
+}
+
+.photo {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+}
+
+.iconWrapper {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(315deg, #111215 0%, #272b2e 100%);
+    backdrop-filter: blur(8px);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+}
+
+.name {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+}
+
+.footer {
+    display: flex;
+    gap: 16px;
+    overflow: auto;
+}
+
+.footer::-webkit-scrollbar {
+    display: none;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    height: 246px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+}
+
+.featureDesc {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+}
+
+.featureIcon {
+    width: 96px;
+    height: 96px;
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutUsOverlay {
+        padding: 115px 50px 148px;
+    }
+
+    .header {
+        margin-bottom: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+        position: relative;
+    }
+
+    .label {
+        flex-shrink: 0;
+        padding: 8px 27px;
+        margin-bottom: unset;
+    }
+
+    .labelText {
+        font-size: 16px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .descriptionWrapper {
+        position: absolute;
+        top: 60%;
+        right: 0%;
+        transform: translate(0%, -60%);
+        gap: 36px;
+    }
+
+    .description {
+        font-size: 36px;
+        max-width: 695px;
+
+        &:first-child {
+            text-indent: 130px;
+        }
+
+        &:last-child {
+            margin-bottom: unset;
+        }
+    }
+
+    .photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .iconWrapper {
+        width: 92px;
+        height: 92px;
+    }
+
+    .icon {
+        width: 29px;
+        height: 29px;
+    }
+
+    .footer {
+        justify-content: center;
+        gap: 40px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        width: 295px;
+        height: 295px;
+    }
+
+    .featureDesc {
+        font-size: 18px;
+    }
+
+    .featureIcon {
+        width: 120px;
+        height: 120px;
+    }
+}
