@@ -8,7 +8,7 @@
 .heroHeader {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
 }
 
 .heroInfo {
@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    padding: 32px 20px;
+    padding: 29px 20px 35px;
 }
 
 .heroTitle {
@@ -27,6 +27,7 @@
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 16px;
+
 
     span {
         background: linear-gradient(
@@ -126,7 +127,14 @@
 .hero {
     border-radius: 2rem;
     overflow: hidden;
-    margin: 0 auto 16px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
 }
 
 .heroFooter {
@@ -172,4 +180,77 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .heroOverlay {
+    padding: 20px 50px 115px;
+    gap: 20px;
+}
+
+.heroHeader {
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heroInfo {
+    padding: 55px 93px 55px 40px;
+    max-width: 900px;
+}
+
+.heroTitle {
+    font-size: 104px;
+    margin-bottom: 56px;
+}
+
+.heroTextWrapper {
+    flex-direction: row;
+    gap: 76px;
+}
+
+.heroText {
+    font-size: 18px;
+    line-height: 160%;
+
+    .heroTextSpan {
+        padding: 6px 16px;
+        margin: 0 4px;
+    }
+}
+
+.heroBtnWrapper {
+    gap: 24px;
+}
+
+.heroBtn {
+    padding: 14px;
+    min-width: 280px;
+}
+
+.heroBtnText {
+    font-size: 16px;
+}
+
+.heroBtnIcon {
+    width: 42px;
+    height: 42px;
+}
+
+.heroTextLast {
+    font-size: 10px;
+}
+
+.hero {
+    margin: unset;
+    flex-shrink: 0;
+    max-width: 424px;
+    max-height: 688px;
+}
+
+.heroFooter {
+    height: 360px;
+}
+
+.heroFooterBtn {
+    display: none;
+}
 }
