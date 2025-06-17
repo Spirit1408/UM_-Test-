@@ -2,6 +2,13 @@
     padding: 16px 10px 48px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+
+.heroHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .heroInfo {
@@ -10,7 +17,6 @@
     background-size: 100% 100%;
     background-position: center;
     padding: 32px 20px;
-    margin-bottom: 8px;
 }
 
 .heroTitle {

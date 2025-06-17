@@ -1,5 +1,5 @@
 .headerOverlay {
-    padding: 16px 20px;
+    padding: clamp(16px, 0.77vw + 10px, 21px) clamp(20px, 4.62vw, 50px);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -19,10 +19,9 @@
 }
 
 .logo {
-    width: 63px;
-    height: 28px;
+    width: clamp(63px, 5.54vw + 1px, 73px);
+    height: clamp(28px, 2.616vw + 1px, 32px);
     fill: #ffffff;
-    flex-shrink: 0;
 }
 
 .btns {
@@ -32,7 +31,7 @@
 
 .btn {
     display: flex;
-    padding: 12px;
+    padding: clamp(8px, 0.77vw + 4px, 12px);
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -62,15 +61,11 @@
 }
 
 .btnIcon {
-    width: 22px;
-    height: 22px;
+    width: clamp(16px, 0.924vw, 22px);
+    height: clamp(16px, 0.924vw, 22px);
 }
 
 @media screen and (min-width: 1024px) {
-    .headerOverlay {
-        padding: 21px 50px;
-    }
-
     .headerScrolled {
         background-color: transparent;
         backdrop-filter: none;
@@ -90,21 +85,16 @@
         align-items: center;
     }
 
-    .logo {
-        width: 73px;
-        height: 32px;
-    }
-
     .navList {
         display: flex;
-        gap: 46px;
-        margin-left: 119px;
+        gap: clamp(30px, 2.616vw, 46px);
+        margin-left: clamp(80px, 5.616vw, 119px);
     }
 
     .navLink {
         font-family: var(--second-family);
         font-weight: 400;
-        font-size: 14px;
+        font-size: clamp(14px, 0.616vw + 0px, 16px);
         line-height: 100%;
         letter-spacing: -0.02em;
         text-transform: uppercase;
@@ -116,12 +106,7 @@
     }
 
     .btn {
-        padding: 8px;
-    }
-
-    .btnIcon {
-        width: 16px;
-        height: 16px;
+        padding: clamp(8px, 0.77vw + 4px, 12px);
     }
 
     .btnPenWrapper {
@@ -131,19 +116,19 @@
         gap: 8px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 166px;
-        padding: 12px;
+        padding: clamp(8px, 0.77vw + 4px, 12px);
         cursor: pointer;
 
         .btnText {
             display: block;
             font-family: var(--second-family);
             font-weight: 700;
-            font-size: 16px;
+            font-size: clamp(14px, 0.616vw + 0px, 16px);
             line-height: 100%;
             letter-spacing: -0.02em;
             text-align: center;
             color: #ffffff;
-            padding: 0 25px;
+            padding: 0 clamp(16px, 1.4vw, 25px);
         }
     }
 }

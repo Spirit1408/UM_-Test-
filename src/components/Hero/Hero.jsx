@@ -5,59 +5,61 @@ import sprite from "../../assets/icons/sprite.svg";
 export const Hero = () => {
     return (
         <div className={css.heroOverlay}>
-            <div className={css.heroInfo}>
-                <h1 className={css.heroTitle}>
-                    building <span>data-driven</span> e-commerce on shopify
-                </h1>
-
-                <div className={css.heroTextWrapper}>
-                    <p className={css.heroText}>
-                        We help businesses grow and scale with our expertise in{" "}
-                        <span className={css.heroTextSpan}>
-                            <span className={css.heroTextSpanInner}>
-                                performance
+            <div className={css.heroHeader}>
+                <div className={css.heroInfo}>
+                    <h1 className={css.heroTitle}>
+                        building <span>data-driven</span> e-commerce on shopify
+                    </h1>
+    
+                    <div className={css.heroTextWrapper}>
+                        <p className={css.heroText}>
+                            We help businesses grow and scale with our expertise in{" "}
+                            <span className={css.heroTextSpan}>
+                                <span className={css.heroTextSpanInner}>
+                                    performance
+                                </span>{" "}
+                                marketing
+                            </span>
+                            ,{" "}
+                            <span className={css.heroTextSpan}>
+                                <span className={css.heroTextSpanInner}>user</span>{" "}
+                                experience
                             </span>{" "}
-                            marketing
-                        </span>
-                        ,{" "}
-                        <span className={css.heroTextSpan}>
-                            <span className={css.heroTextSpanInner}>user</span>{" "}
-                            experience
-                        </span>{" "}
-                        and{" "}
-                        <span className={css.heroTextSpan}>
-                            <span className={css.heroTextSpanInner}>
-                                creative
-                            </span>{" "}
-                            strategy
-                        </span>
-                    </p>
-
-                    <div className={css.heroBtnWrapper}>
-                        <button className={css.heroBtn}>
-                            <p className={css.heroBtnText}>
-                                free strategy call
-                            </p>
-                            <svg className={css.heroBtnIcon}>
-                                <use href={`${sprite}#icon-calendar`}></use>
-                            </svg>
-                        </button>
-
-                        <p className={css.heroTextLast}>
-                            146+ reviews.{" "}
-                            <span>
-                                all chanses that you'll be impressed too.
+                            and{" "}
+                            <span className={css.heroTextSpan}>
+                                <span className={css.heroTextSpanInner}>
+                                    creative
+                                </span>{" "}
+                                strategy
                             </span>
                         </p>
+    
+                        <div className={css.heroBtnWrapper}>
+                            <button className={css.heroBtn}>
+                                <p className={css.heroBtnText}>
+                                    free strategy call
+                                </p>
+                                <svg className={css.heroBtnIcon}>
+                                    <use href={`${sprite}#icon-calendar`}></use>
+                                </svg>
+                            </button>
+    
+                            <p className={css.heroTextLast}>
+                                146+ reviews.{" "}
+                                <span>
+                                    all chanses that you'll be impressed too.
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div className={css.hero}>
-                <img
-                    src={img}
-                    alt="hero"
-                />
+    
+                <div className={css.hero}>
+                    <img
+                        src={img}
+                        alt="hero"
+                    />
+                </div>
             </div>
 
             <div className={css.heroFooter}>
