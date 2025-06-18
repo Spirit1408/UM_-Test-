@@ -111,11 +111,20 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("./assets/fonts/LibreBaskerville-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
 :root {
     --font-family: "Manrope", sans-serif;
     --second-family: "Proxima Nova", sans-serif;
     --third-family: "Inter", sans-serif;
     --font3: "SF Pro Text", sans-serif;
+    --font4: "Libre Baskerville", sans-serif;
 
     font-family: var(--font-family);
     line-height: 1.5;

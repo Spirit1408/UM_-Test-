@@ -1,0 +1,365 @@
+.workStepsOverlay {
+    padding: 98px 10px 96px;
+    color: #ffffff;
+    transition: color 0.3s ease-out, background 0.3s ease-out;
+}
+
+.header {
+    margin-bottom: 46px;
+}
+
+.workStepsTitle {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    max-width: 600px;
+    margin: 0 auto 20px;
+
+    span {
+        display: inline-block;
+        font-family: var(--font4);
+        font-style: italic;
+        font-weight: 400;
+    }
+}
+
+.workStepsTitleTop {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.workStepsTitleBottom {
+    text-align: right;
+}
+
+.personWrapper {
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+}
+
+.personImage {
+    width: 76px;
+    height: 76px;
+    border-radius: 100%;
+}
+
+.personIconWrapper {
+    position: absolute;
+    top: 50%;
+    right: -68%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(58deg, #0034ed 0%, #04b8c4 49%, #4bfa8a 100%);
+    backdrop-filter: blur(8px);
+}
+
+.personIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.workStepsText {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    max-width: 238px;
+    margin-left: 30%;
+
+    span {
+        font-weight: 800;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.workflow {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    overflow-x: auto;
+    max-width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    color: #161616;
+    transition: gap 0.3s ease-out;
+}
+
+.workflow::-webkit-scrollbar {
+    display: none;
+}
+
+.workflowWeek {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000000;
+    min-width: calc((100% - 30px) / 4);
+    width: 335px;
+    height: 620px;
+    background-image: url("../../assets/frame.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 24%;
+        right: 0.5%;
+        display: block;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(180deg, #97fcdd 0%, #ffffff 60.13%);
+        z-index: 1;
+        border-radius: 336px 336px 0 0;
+        border: 2px dashed #09e1a1;
+        border-bottom: none;
+    }
+}
+
+.workflowWeekHeader {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    display: flex;
+    gap: 6px;
+    margin-bottom: 32px;
+    opacity: 0.4;
+}
+
+.workflowWeekHeaderIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.workflowWeekTitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 90%;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
+
+.workflowWeekIconWrapper {
+    border-radius: 100%;
+    background: linear-gradient(58deg, #5cd6b3 0%, #04b8c4 0.01%, #4bfa8a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    transition: background 0.3s ease-out;
+}
+
+.workflowWeekIcon {
+    fill: #ffffff;
+    width: 27px;
+    height: 27px;
+    transition: fill 0.3s ease-out;
+}
+
+.workflowWeekTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.workflowWeekTask {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 166px;
+    padding: 6px;
+    background: #f4f4f4;
+}
+
+.workflowWeekTaskNum {
+    border-radius: 100%;
+    background: #000000;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.05em;
+}
+
+.workflowWeekTaskText {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+}
+
+.switchers {
+    display: flex;
+    gap: clamp(5px, 1.25vw, 10px);
+}
+
+.switcherBar {
+    background-color: #4e4e4e;
+    width: clamp(80px, 12.5vw, 160px);
+    height: 5px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.switcher {
+    height: 5px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    transition: left 0.3s ease-out;
+}
+
+.workflowWeekWrapper {
+    transition: margin 0.5s ease-out;
+}
+
+@media screen and (min-width: 1024px) {
+    .workStepsOverlay {
+        padding: 121px 50px 160px;
+        color: #000000;
+        background: #f9f9f9;
+    }
+
+    .header {
+        margin-bottom: 86px;
+        position: relative;
+    }
+
+    .workStepsTitle {
+        font-size: 175px;
+        max-width: unset;
+        margin-bottom: unset;
+
+        span {
+            display: inline-block;
+            font-family: var(--font4);
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+
+    .workStepsTitleTop {
+        gap: 40px;
+    }
+
+    .workStepsTitleBottom {
+        margin-right: 55px;
+    }
+
+    .personImage {
+        width: 173px;
+        height: 173px;
+    }
+
+    .personIconWrapper {
+        width: 114px;
+        height: 114px;
+    }
+
+    .personIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .workStepsText {
+        font-size: 14px;
+        max-width: 281px;
+        margin-left: unset;
+        position: absolute;
+        top: clamp(50%, 15vw, 60%);
+        left: 0;
+    }
+
+    .workflow {
+        gap: 0;
+    }
+
+    .workflowWeekWrapper:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    .workflowWeekWrapper:nth-child(3) {
+        margin-top: 160px;
+    }
+
+    .workflowWeekWrapper:nth-child(4) {
+        margin-top: 240px;
+    }
+
+    .workflowWeek {
+        max-width: 336px;
+        height: 670px;
+        background-image: url("../../assets/frame-desk.svg");
+        background-size: contain;
+        padding: 20px 30px 30px;
+        position: relative;
+
+        &:after {
+            right: 0;
+            width: 99%;
+            background: transparent;
+            border-color: rgba(22, 22, 22, 0.1);
+        }
+    }
+
+    .workflowWeekHeader {
+        font-size: 14px;
+        margin-bottom: 29px;
+    }
+
+    .workflowWeekIconWrapper {
+        background: #ffffff;
+        padding: 32px;
+    }
+
+    .workflowWeekIcon {
+        fill: #a1a1a1;
+        width: 33px;
+        height: 33px;
+    }
+
+    .switchers {
+        display: none;
+    }
+}

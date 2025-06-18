@@ -21,7 +21,6 @@
 
 .labelText {
     font-family: var(--second-family);
-    font-weight: 400;
     font-size: 12px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -43,7 +42,6 @@
 
 .description {
     font-family: var(--second-family);
-    font-weight: 400;
     font-size: 23px;
     line-height: 120%;
     letter-spacing: -0.02em;
@@ -112,6 +110,8 @@
     display: flex;
     gap: 16px;
     overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .footer::-webkit-scrollbar {

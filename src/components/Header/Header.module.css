@@ -109,7 +109,6 @@
 
     .navLink {
         font-family: var(--second-family);
-        font-weight: 400;
         font-size: clamp(14px, 0.616vw + 0px, 16px);
         line-height: 100%;
         letter-spacing: -0.02em;
