@@ -44,7 +44,7 @@ export const AboutUs = () => {
 
                     <p className={css.name}>Victor Terekhovskyi</p>
 
-                    <p classname={css.title}>Сo-founder & COO</p>
+                    <p className={css.title}>Сo-founder & COO</p>
                 </div>
             </div>
 
