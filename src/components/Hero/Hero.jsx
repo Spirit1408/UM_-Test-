@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import css from "./Hero.module.css";
 import img from "../../assets/images/hero.jpg";
 import sprite from "../../assets/icons/sprite.svg";
+import { ModalContext } from "../../App";
 
 export const Hero = () => {
+    const { openModal } = useContext(ModalContext);
+    
     return (
         <section className={css.heroOverlay}>
             <div className={css.heroHeader}>
@@ -38,7 +42,10 @@ export const Hero = () => {
                         </p>
 
                         <div className={css.heroBtnWrapper}>
-                            <button className={css.heroBtn}>
+                            <button 
+                                className={css.heroBtn}
+                                onClick={openModal}
+                            >
                                 <p className={css.heroBtnText}>
                                     free strategy call
                                 </p>

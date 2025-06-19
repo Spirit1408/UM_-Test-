@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import css from "./Header.module.css";
 import sprite from "../../assets/icons/sprite.svg";
+import { ModalContext } from "../../App";
 
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
+    const { openModal } = useContext(ModalContext);
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -77,7 +79,8 @@ export const Header = () => {
                             className={css.btnPenWrapper}
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3 }}>
+                            transition={{ duration: 0.3 }}
+                            onClick={openModal}>
                             <AnimatePresence>
                                 {isDesktop && (
                                     <motion.span
@@ -90,12 +93,14 @@ export const Header = () => {
                                         animate={{ opacity: 1, x: 0 }}
                                         exit={{ opacity: 0, x: 10 }}
                                         transition={{ duration: 0.3 }}>
-                                        LET’S TALK
+                                        LET'S TALK
                                     </motion.span>
                                 )}
                             </AnimatePresence>
 
-                            <button className={clsx(css.btn, css.btnPen)}>
+                            <button 
+                                className={clsx(css.btn, css.btnPen)}
+                            >
                                 <svg
                                     className={clsx(
                                         css.btnIcon,
