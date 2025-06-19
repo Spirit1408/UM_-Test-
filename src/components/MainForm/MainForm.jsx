@@ -1,0 +1,44 @@
+import css from './MainForm.module.css'
+import sprite from '../../assets/icons/sprite.svg'
+
+export const MainForm = () => {
+    return <div className={css.formWrapper}>
+        <h2 className={css.formTitle}>Ready to discuss your project with us?</h2>
+
+        <form className={css.form}>
+            <div className={css.inputGroup}>
+                <input className={css.input} type="text" placeholder="Full Name*" required />
+                <input className={css.input} type="email" placeholder="E-mail*" required />
+            </div>
+
+            <input className={css.input} type="text" placeholder="Link your store" />
+
+            <textarea className={css.textarea} placeholder="About project"></textarea>
+        </form>
+
+        <div className={css.footer}>
+            <p className={css.policy}>
+                By sending this form I confirm that I have read and accept the{' '}
+                <a className={css.policyLink} href="#">Privacy Policy</a>
+            </p>
+
+            <button type="submit" className={css.btn}>
+                <p>Send a message</p>
+
+                <div className={css.btnIconWrapper}>
+                    <svg className={css.btnIcon}>
+                        <defs>
+                            <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#0034ed" />
+                                <stop offset="49%" stopColor="#04b8c4" />
+                                <stop offset="100%" stopColor="#4bfa8a" />
+                            </linearGradient>
+                        </defs>
+                        <use href={`${sprite}#icon-pen`} fill="url(#iconGradient)"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        
+    </div>;
+}

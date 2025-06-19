@@ -1,0 +1,142 @@
+.formLayout {
+    padding: 30px;
+    background-image: url(../../assets/images/fl-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 12px;
+}
+
+.review {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .formLayout {
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+        align-items: center;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        gap: 94px;
+        background-image: url(../../assets/images/fl-inner-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 40px 40px 54px;
+        flex-shrink: 0;
+    }
+
+    .reviewTitle {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 73px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: rgba(22, 22, 22, 0.12);
+            position: absolute;
+            bottom: -36px;
+            left: 0;
+        }
+    }
+
+    .reviewTitleIcon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .reviewTitleText {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+
+        span {
+            font-family: var(--font4);
+            font-weight: 400;
+        }
+    }
+
+    .reviewScore {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        background-color: #000000;
+        border-radius: 8px;
+        padding: 14px 16px;
+        color: #ffffff;
+        width: fit-content;
+    }
+
+    .reviewScoreIcon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .reviewScoreValue {
+        font-family: var(--third-family);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        letter-spacing: -0.03em;
+    }
+
+    .logo {
+        width: 90px;
+        height: 28px;
+        fill: #ffffff;
+    }
+
+    .reviewText {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        max-width: 416px;
+
+        span {
+            color: #a2a2a2;
+        }
+    }
+
+    .geo {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .geoIcon {
+        width: 21px;
+        height: 21px;
+    }
+
+    .geoText {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.03em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .review {
+        flex-shrink: 1;
+    }
+
+    .reviewTitle {
+        flex-direction: column;
+    }
+}

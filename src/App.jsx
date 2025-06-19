@@ -2,6 +2,7 @@ import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { WorkSteps } from "./components/WorkSteps/WorkSteps";
+import { ConsultationForm } from "./components/ConsultationForm/ConsultationForm";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Hero />
             <AboutUs />
             <WorkSteps />
+            <ConsultationForm />
         </>
     );
 }

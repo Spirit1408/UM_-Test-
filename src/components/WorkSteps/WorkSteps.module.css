@@ -1,5 +1,5 @@
 .workStepsOverlay {
-    padding: 98px 10px 96px;
+    padding: 98px 10px 48px;
     color: #ffffff;
     transition: color 0.3s ease-out, background 0.3s ease-out;
 }
@@ -256,7 +256,7 @@
 
 @media screen and (min-width: 1024px) {
     .workStepsOverlay {
-        padding: 121px 50px 160px;
+        padding: 121px 50px 80px;
         color: #000000;
         background: #f9f9f9;
     }
