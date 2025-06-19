@@ -13,7 +13,7 @@
     max-width: 96%;
 }
 
-.form {
+.header {
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -34,6 +34,7 @@
     font-family: var(--font-family);
     font-size: 14px;
     line-height: 100%;
+    transition: border-bottom 0.3s ease-out;
 
     &::placeholder {
         font-family: var(--font-family);
@@ -41,6 +42,10 @@
         font-size: 14px;
         line-height: 100%;
     }
+}
+
+.invalid {
+    border-bottom: 1px solid #ff3b30 !important;
 }
 
 .textarea {
@@ -117,7 +122,7 @@
         max-width: 75%;
     }
 
-    .form {
+    .header {
         gap: 56px;
         margin-bottom: 42px;
     }

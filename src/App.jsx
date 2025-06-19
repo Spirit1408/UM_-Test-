@@ -3,6 +3,8 @@ import { Hero } from "./components/Hero/Hero";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { WorkSteps } from "./components/WorkSteps/WorkSteps";
 import { ConsultationForm } from "./components/ConsultationForm/ConsultationForm";
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
     return (
@@ -12,6 +14,8 @@ function App() {
             <AboutUs />
             <WorkSteps />
             <ConsultationForm />
+
+            <ToastContainer position="bottom-right" autoClose={5000} />
         </>
     );
 }
