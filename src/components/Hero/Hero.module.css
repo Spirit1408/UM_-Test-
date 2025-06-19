@@ -240,7 +240,7 @@
         margin: unset;
         flex-shrink: 0;
         max-width: 424px;
-        max-height: 688px;
+        height: 700px;
     }
 
     .heroFooter {

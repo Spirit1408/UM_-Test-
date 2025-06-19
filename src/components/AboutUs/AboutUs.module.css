@@ -112,6 +112,7 @@
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    transition: gap 0.3s ease-out, margin-left 0.3s ease-out;
 }
 
 .footer::-webkit-scrollbar {
@@ -209,10 +210,8 @@
     }
 
     .footer {
-        justify-content: center;
         gap: 40px;
-        overflow: hidden;
-        flex-wrap: wrap;
+        margin-left: 20px;
     }
 
     .feature {
