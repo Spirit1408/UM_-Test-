@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import { Modal } from "./components/Modal/Modal";
 import { FormLayout } from "./components/FormLayout/FormLayout";
 import { useState, createContext } from "react";
+import { PopupForm } from "./components/PopupForm/PopupForm";
 
 export const ModalContext = createContext();
 
@@ -33,7 +34,9 @@ function App() {
 
             {isModalOpen && (
                 <Modal onClose={closeModal}>
-                    <FormLayout />
+                    <FormLayout>
+                        <PopupForm />
+                    </FormLayout>
                 </Modal>
             )}
         </ModalContext.Provider>

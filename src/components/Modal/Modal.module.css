@@ -12,6 +12,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 0 10px;
 }
 
 .modalOverlay.active {
@@ -20,10 +21,25 @@
 }
 
 .modalWrapper {
-    max-width: 355px;
     transform: scale(0.9);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #fff;
+    outline: none;
+    border: none;
 }
 
 .modalOverlay.active .modalWrapper {
@@ -32,7 +48,15 @@
 }
 
 @media (min-width: 1024px) {
+    .modalOverlay {
+        padding: 0 50px;
+    }
     .modalWrapper {
         max-width: 1340px;
+    }
+
+    .closeBtn {
+        width: 24px;
+        height: 24px;
     }
 }

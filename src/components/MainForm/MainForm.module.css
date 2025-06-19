@@ -67,7 +67,6 @@
 }
 
 .policyLink {
-    display: inline-block;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     text-decoration-color: #04b8c4;

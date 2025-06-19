@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import css from './Modal.module.css';
+import sprite from '../../assets/icons/sprite.svg';
 
 export const Modal = ({ children, onClose }) => {
     const modalRef = useRef(null);
@@ -48,6 +49,12 @@ export const Modal = ({ children, onClose }) => {
                 ref={modalRef}
             >
                 {children}
+
+                <button className={css.closeBtn} onClick={handleClose}>
+                    <svg className={css.closeBtnIcon}>
+                        <use href={`${sprite}#icon-close`}></use>
+                    </svg>
+                </button>
             </div>
         </div>
     );

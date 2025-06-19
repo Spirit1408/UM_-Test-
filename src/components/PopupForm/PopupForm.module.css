@@ -1,0 +1,256 @@
+.formWrapper {
+    color: #161616;
+}
+
+.formTitle {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #161616;
+    margin-bottom: 24px;
+    max-width: 96%;
+}
+
+.selectGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.label {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 133%;
+    color: #1d1d1b;
+}
+
+.optionsList {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.option {
+    border: 1px solid #afafaf;
+    border-radius: 333px;
+    padding: 12px;
+    background: transparent;
+    color: #afafaf;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #afafaf;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.option.selected {
+    color: #000000;
+    border-color: #000000;
+}
+
+.optionCheckbox {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.emailInput {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.input {
+    padding-bottom: 21px;
+    border: none;
+    border-bottom: 1px solid #afafaf;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 100%;
+    transition: border-bottom 0.3s ease-out;
+
+    &::placeholder {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+    }
+}
+
+.invalid {
+    border-bottom: 1px solid #ff3b30 !important;
+}
+
+.btnsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.submitBtn {
+    display: flex;
+    align-items: center;
+    border-radius: 166px;
+    padding: 10px;
+    color: #ffffff;
+    background: linear-gradient(49deg, #15bcdf 0.01%, #0ddc7a 61.5%, #15bcdf 100%);;
+    outline: none;
+    border: none;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    
+    p {
+        flex-grow: 1;
+    }
+}
+
+.btnIconWrapper {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnIcon {
+    width: 21px;
+    height: 21px;
+}
+
+.callBtnWrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.callBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    fill: #f5f5f5;
+    width: 62px;
+    height: 62px;
+    outline: none;
+    border: none;
+    flex-shrink: 0;
+}
+
+.callBtnIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.callBtnDescr {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1d1d1b;
+
+    span {
+        font-weight: 800;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.policy {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #a2a2a2;
+
+    a {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-decoration-color: #04b8c4;
+        text-decoration-thickness: 1px;
+        background: linear-gradient(58deg, #5cd6b3 0%, #04b8c4 0.01%, #4bfa8a 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .formTitle {
+        font-size: 56px;
+        margin-bottom: 40px;
+        max-width: 76%;
+    }
+
+    .label {
+        font-size: 36px;
+    }
+
+    .option {
+        font-size: 16px;
+    }
+
+    .emailInput {
+        margin-bottom: 56px;
+        max-width: 466px;
+    }
+
+    .input {
+        padding-bottom: 16px;
+        font-size: 16px;
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+
+    .btnsWrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .submitBtn {
+        padding: 14px;
+        min-width: 280px;
+    }
+
+    .callBtnWrapper {
+        gap: 16px;
+    }
+
+    .callBtn {
+        width: 70px;
+        height: 70px;
+    }
+
+    .callBtnIcon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .callBtnDescr {
+        font-size: 18px;
+        max-width: 284px;
+    }
+
+    .policy {
+        font-size: 14px;
+        line-height: 100%;
+    }
+}

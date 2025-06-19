@@ -8,6 +8,7 @@ export const MainForm = () => {
 
     const form = e.target;
     const inputs = form.querySelectorAll('input[required]');
+    const emailInput = form.querySelector('input[type="email"]');
 
     let formIsValid = true;
 
@@ -22,6 +23,13 @@ export const MainForm = () => {
 
     if (!formIsValid) {
         toast.error('Please fill in all required fields.');
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailInput && !emailRegex.test(emailInput.value.trim())) {
+        emailInput.classList.add(css.invalid);
+        toast.error('Please enter a valid email address.');
         return;
     }
 
@@ -57,9 +65,9 @@ export const MainForm = () => {
                         <svg className={css.btnIcon}>
                             <defs>
                                 <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stopColor="#0034ed" />
-                                    <stop offset="49%" stopColor="#04b8c4" />
-                                    <stop offset="100%" stopColor="#4bfa8a" />
+                                    <stop offset="0.01%" stopColor="#15dcdf" />
+                                    <stop offset="61.5%" stopColor="#0ddc7a" />
+                                    <stop offset="100%" stopColor="#15dcdf" />
                                 </linearGradient>
                             </defs>
                             <use href={`${sprite}#icon-pen`} fill="url(#iconGradient)"></use>
