@@ -10,7 +10,6 @@
     display: none;
 }
 
-
 @media screen and (min-width: 1024px) {
     .formLayout {
         padding: 40px;

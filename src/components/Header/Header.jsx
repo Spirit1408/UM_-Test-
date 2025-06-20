@@ -98,9 +98,7 @@ export const Header = () => {
                                 )}
                             </AnimatePresence>
 
-                            <button 
-                                className={clsx(css.btn, css.btnPen)}
-                            >
+                            <button className={clsx(css.btn, css.btnPen)}>
                                 <svg
                                     className={clsx(
                                         css.btnIcon,

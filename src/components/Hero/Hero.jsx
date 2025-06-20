@@ -6,7 +6,7 @@ import { ModalContext } from "../../App";
 
 export const Hero = () => {
     const { openModal } = useContext(ModalContext);
-    
+
     return (
         <section className={css.heroOverlay}>
             <div className={css.heroHeader}>
@@ -42,10 +42,9 @@ export const Hero = () => {
                         </p>
 
                         <div className={css.heroBtnWrapper}>
-                            <button 
+                            <button
                                 className={css.heroBtn}
-                                onClick={openModal}
-                            >
+                                onClick={openModal}>
                                 <p className={css.heroBtnText}>
                                     free strategy call
                                 </p>

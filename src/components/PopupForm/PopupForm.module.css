@@ -102,7 +102,12 @@
     border-radius: 166px;
     padding: 10px;
     color: #ffffff;
-    background: linear-gradient(49deg, #15bcdf 0.01%, #0ddc7a 61.5%, #15bcdf 100%);;
+    background: linear-gradient(
+        49deg,
+        #15bcdf 0.01%,
+        #0ddc7a 61.5%,
+        #15bcdf 100%
+    );
     outline: none;
     border: none;
     font-family: var(--second-family);
@@ -112,7 +117,7 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     text-align: center;
-    
+
     p {
         flex-grow: 1;
     }
@@ -183,13 +188,17 @@
         text-decoration-skip-ink: none;
         text-decoration-color: #04b8c4;
         text-decoration-thickness: 1px;
-        background: linear-gradient(58deg, #5cd6b3 0%, #04b8c4 0.01%, #4bfa8a 100%);
+        background: linear-gradient(
+            58deg,
+            #5cd6b3 0%,
+            #04b8c4 0.01%,
+            #4bfa8a 100%
+        );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
-
 
 @media screen and (min-width: 1024px) {
     .formTitle {
