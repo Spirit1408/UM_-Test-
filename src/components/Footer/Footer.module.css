@@ -1,0 +1,220 @@
+.footer {
+    padding: 71px 20px 52px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    background-image: url(../../assets/images/footer-bg.png);
+    background-size: clamp(1000px, 100vw, 1500px);
+    background-position: 
+    calc(-1 * clamp(250px, 60vw, 350px)) 
+    calc(-1 * clamp(80px, 20vw, 200px));
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: clamp(64px, 6.616vw, 104px);
+    line-height: 96%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    max-width: 40%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    width: clamp(186px, 20vw, 238px);
+    height: clamp(186px, 20vw, 238px);
+    border-radius: 100%;
+    background-image: linear-gradient(58deg, #5cd6b3 0%, #04b8c4 0.01%, #4bfa8a 100%);;
+    margin-bottom: 56px;
+    outline: none;
+    border: none;
+}
+
+.btnIconWrapper {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    background-color: #070707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnIcon {
+    width: 23px;
+    height: 23px;
+}
+
+.btnText {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #070707;
+    max-width: 100px;
+}
+
+
+.email {
+    border: 2px solid #ffffff;
+    border-radius: 266px;
+    padding: clamp(12px, 1.25vw, 16px);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.emailIcon {
+    width: clamp(16px, 1.25vw, 21px);
+    height: clamp(16px, 1.25vw, 21px);
+}
+
+.emailAddress {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: clamp(16px, 1.25vw, 21px);
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+
+.listTitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(16px, 1.25vw, 21px);
+    line-height: 133%;
+    text-transform: uppercase;
+    opacity: 0.3;
+    margin-bottom: 24px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, calc(80px - 5vw), 24px);
+}
+
+.link {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: clamp(16px, calc(100px - 5.25vw), 18px);
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.socialLinkWrapper {
+    display: flex;
+    gap: clamp(16px, 2vw, 24px);
+    align-items: center;
+}
+
+.socialLinkIconWrapper {
+    border-radius: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: clamp(56px, 5vw, 76px);
+    height: clamp(56px, 5vw, 76px);
+}
+
+.socialLinkIcon {
+    width: clamp(16px, 2vw, 24px);
+    height: clamp(16px, 2vw, 24px);
+}
+
+.socialLinkText {
+    font-weight: 500;
+    font-size: clamp(24px, 2vw, 32px);
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.terms, .privacy, .copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    opacity: 0.6;
+    color: #ffffff;
+}
+
+.privacy {
+    margin-top: -32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        padding: 68px 50px 120px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "info menu social" "copyright terms privacy";
+        gap: 120px;
+    }
+
+    .footerInfo {
+        grid-area: info;
+        position: relative;
+    }
+
+    .title {
+        margin-bottom: 56px;
+    }
+
+    .footerMenu {
+        grid-area: menu;
+    }
+
+    .footerSocial {
+        grid-area: social;
+    }
+
+    .terms {
+        grid-area: terms;
+    }
+
+    .privacy {
+        grid-area: privacy;
+        margin-top: unset;
+    }
+
+    .copyright {
+        grid-area: copyright;
+    }
+
+    .btn {
+        position: absolute;
+        top: 17%;
+        left: 34%;
+    }
+
+    .btnText {
+        font-size: 18px;
+        line-height: 130%;
+    }
+}
+
+

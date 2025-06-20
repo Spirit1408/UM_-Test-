@@ -1,7 +1,7 @@
 .consultationFormOverlay {
     background-color: #000000;
     transition: background-color 0.3s ease-out;
-    padding: 48px 0;
+    padding: 48px 0 71px;
 }
 
 .consultationFormWrapper {

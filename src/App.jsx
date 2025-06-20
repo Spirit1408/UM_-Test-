@@ -8,6 +8,7 @@ import { Modal } from "./components/Modal/Modal";
 import { FormLayout } from "./components/FormLayout/FormLayout";
 import { useState, createContext } from "react";
 import { PopupForm } from "./components/PopupForm/PopupForm";
+import { Footer } from "./components/Footer/Footer";
 
 export const ModalContext = createContext();
 
@@ -25,10 +26,15 @@ function App() {
     return (
         <ModalContext.Provider value={{ isModalOpen, openModal, closeModal }}>
             <Header />
-            <Hero />
-            <AboutUs />
-            <WorkSteps />
-            <ConsultationForm />
+
+            <main>
+                <Hero />
+                <AboutUs />
+                <WorkSteps />
+                <ConsultationForm />
+            </main>
+
+            <Footer />
 
             <ToastContainer position="bottom-right" autoClose={5000} />
 
