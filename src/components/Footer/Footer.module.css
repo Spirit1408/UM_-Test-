@@ -2,7 +2,8 @@
     padding: 71px 20px 52px;
     color: #ffffff;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 56px;
     background-image: url(../../assets/images/footer-bg.png);
     background-size: clamp(1000px, 100vw, 1500px);
@@ -159,11 +160,14 @@
     line-height: 100%;
     opacity: 0.6;
     color: #ffffff;
+    display: block;
+    width: 100%;
 }
 
 .privacy {
     margin-top: -32px;
 }
+
 
 @media screen and (min-width: 1024px) {
     .footer {
